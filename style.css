@@ -31,6 +31,16 @@ body {
   margin-right: 30px;
 }
 
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  .container > section:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
 .emoji {
   font-size: 5rem;
   min-height: 120px;
