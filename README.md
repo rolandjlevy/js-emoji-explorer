@@ -1,4 +1,4 @@
-# Emoji animation
+# Emoji explorer
 
 - [Live demo](https://js-emoji-animation.rolandjlevy.repl.co/)
 - [Source code](https://replit.com/@RolandJLevy/js-emoji-animation)
