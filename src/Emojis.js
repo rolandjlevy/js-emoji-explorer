@@ -3,6 +3,7 @@ export default class Emojis {
     this.emojis = emojis;
     this.name = name;
     this.$ = (el) => document.querySelector(el);
+    this.status = this.$(`#${this.name}-header > sup`);
     this.slider = this.$(`#${this.name}-slider`);
     this.emoji = this.$(`#${this.name}-emoji`);
     this.button = this.$(`#${this.name}-button`);
@@ -26,6 +27,7 @@ export default class Emojis {
   }
   renderEmoji () {
     this.emoji.innerText = this.emojis[this.name][this.counter];
+    this.status.innerText = `${this.counter + 1} of ${this.emojis[this.name].length}`;
   }
   
   runTimer() {
