@@ -1,7 +1,7 @@
 export default class Emojis {
   constructor(emojis, name) {
     this.emojis = emojis;
-    this.name = name;
+    this.name = name.toLowerCase();
     this.$ = (el) => document.querySelector(el);
     this.status = this.$(`#${this.name}-header > sup`);
     this.slider = this.$(`#${this.name}-slider`);
